@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <body>
+    <h2>
+        Please edit the end of the url to search for abbreviations
+    </h2>
+    <ul>
+        {% for result in results %}
+        <li>
+            {{  result }}
+        </li>
+        {% endfor %}
+    </ul>
+    </body>
+
+{% endblock %}

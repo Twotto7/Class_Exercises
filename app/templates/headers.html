@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+     <h2 class="m-2">These are the first 10 abbreviation - extended definition pairs </h2>
+    <p>
+        {% for pair in abb_list %}
+            <li>{{ pair }}</li>
+        {% endfor %}
+    </p>
+{% endblock %}
